@@ -1,0 +1,55 @@
+.services {
+  padding: 120px 32px;
+  position: relative;
+  z-index: 1;
+}
+.services-inner { max-width: 1200px; margin: 0 auto; }
+.services-header { text-align: center; margin-bottom: 64px; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.services-header .section-label { justify-content: center; }
+.services-header .section-label::before { display: none; }
+.services-header .section-desc { text-align: center; margin: 0 auto; }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.service-card { display: flex; flex-direction: column; gap: 14px; }
+.service-card.accent-cyan:hover { border-color: rgba(0,210,255,0.35); }
+.service-card.accent-cyan:hover::before { opacity: 1; }
+.service-card.accent-violet:hover { border-color: rgba(124,58,237,0.4); }
+.service-card.accent-violet::before {
+  background: linear-gradient(90deg, transparent, var(--violet-bright), transparent);
+}
+.service-card.accent-violet:hover::before { opacity: 1; }
+.service-card.accent-green:hover { border-color: rgba(0,255,135,0.3); }
+.service-card.accent-green::before {
+  background: linear-gradient(90deg, transparent, var(--green), transparent);
+}
+.service-card.accent-green:hover::before { opacity: 1; }
+
+.service-icon {
+  font-size: 1.5rem;
+  color: var(--cyan);
+  font-family: var(--font-display);
+  line-height: 1;
+}
+.service-card.accent-violet .service-icon { color: var(--violet-bright); }
+.service-card.accent-green .service-icon { color: var(--green); }
+
+.service-title {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text-hi);
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+}
+.service-desc { font-size: 0.9rem; color: var(--text-mid); line-height: 1.65; flex: 1; }
+.service-list { list-style: none; display: flex; flex-direction: column; gap: 7px; margin-top: 4px; }
+.service-list li { font-size: 0.88rem; color: var(--text-mid); display: flex; align-items: flex-start; gap: 8px; }
+.check { color: var(--cyan); flex-shrink: 0; font-size: 1rem; line-height: 1.3; }
+.service-card.accent-violet .check { color: var(--violet-bright); }
+.service-card.accent-green .check { color: var(--green); }
+
+@media (max-width: 1024px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .services-grid { grid-template-columns: 1fr; } .services { padding: 80px 24px; } }

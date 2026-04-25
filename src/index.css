@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-void:     #030508;
+  --bg-deep:     #080c14;
+  --bg-card:     #0c1220;
+  --bg-glass:    rgba(12, 18, 32, 0.7);
+  --border:      rgba(0, 210, 255, 0.12);
+  --border-hi:   rgba(0, 210, 255, 0.35);
+  --cyan:        #00d2ff;
+  --cyan-dim:    rgba(0, 210, 255, 0.15);
+  --violet:      #7c3aed;
+  --violet-bright: #a855f7;
+  --violet-dim:  rgba(124, 58, 237, 0.15);
+  --green:       #00ff87;
+  --green-dim:   rgba(0, 255, 135, 0.1);
+  --text-hi:     #e8f4ff;
+  --text-mid:    #8ab0c8;
+  --text-lo:     #3d5a70;
+  --font-display:'Orbitron', monospace;
+  --font-body:   'Rajdhani', sans-serif;
+  --font-mono:   'IBM Plex Mono', monospace;
+  --glow-cyan:   0 0 20px rgba(0, 210, 255, 0.4), 0 0 60px rgba(0, 210, 255, 0.15);
+  --glow-violet: 0 0 20px rgba(124, 58, 237, 0.5), 0 0 60px rgba(124, 58, 237, 0.2);
+  --radius:      8px;
+  --radius-lg:   16px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-void);
+  color: var(--text-hi);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb { background: var(--violet); border-radius: 4px; }
+::selection { background: rgba(0, 210, 255, 0.25); color: var(--text-hi); }
