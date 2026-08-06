@@ -1,2 +1,2 @@
-import { algoQueNaoExiste } from "./nao-existe";
-export const x = algoQueNaoExiste;
+// Erro de sintaxe intencional
+this is not valid javascript syntax at all !!!
